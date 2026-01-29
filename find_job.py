@@ -6,19 +6,19 @@ from datetime import datetime
 
 # ================= 配置区域 =================
 # 1. 监听列表：请确保这些群在你的PC微信里是【置顶】状态
-LISTEN_LIST = ["家教", "兼职", "辅导", "通知", "派单"] 
+LISTEN_LIST = ["work1", "work2", "work3", "work4", "work5"] 
 
 # 2. 必选词（白名单）：地域筛选
-REQUIRED_KEYWORDS = ["深圳", "罗湖", "福田", "南山", "宝安", "龙岗", "龙华", "光明", "坪山", "盐田"]
+REQUIRED_KEYWORDS = ["Place1", "Place2", "Place3", "Place4", "Place5", "Place6", "Place7", "Place8", "Place9", "Place10"]
 
 # 3. 拒绝词（黑名单）：性别筛选
-BLACK_KEYWORDS = ["限女", "女大", "女老师", "只招女", "女生", "师范女", "女师范"]
+BLACK_KEYWORDS = ["1", "2", "3", "4", "5", "6", "7"]
 
 # 4. 复活词（权重最高）：
-RESURRECT_KEYWORDS = ["男", "男女不限", "性别不限", "优秀男"]
+RESURRECT_KEYWORDS = ["A", "B", "C", "D"]
 
 # 5. 结果保存的文件名
-RESULT_FILE = "深圳家教_男生可用.xlsx"
+RESULT_FILE = "name.xlsx"
 # ===========================================
 
 def get_keywords_status(content):
@@ -168,4 +168,5 @@ def main():
             time.sleep(5)
 
 if __name__ == "__main__":
+
     main()
